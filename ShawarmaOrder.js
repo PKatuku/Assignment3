@@ -32,17 +32,17 @@ module.exports = class ShwarmaOrder extends Order{
             this.stateCur = OrderState.Items;
             aReturn.push("Welcome to Pawan Tea Point");
             aReturn.push("select your item?");
-            aReturn.push('grilledcheesemelt ');
+            aReturn.push('Chickenwrap ');
             aReturn.push('Muttonwrap ');
             aReturn.push('Vegwrap ');
             break;
             case OrderState.Items:
                 this.sItems=sInput;
-                if(sInput.toLowerCase()!="grilledcheesemelt" && sInput.toLowerCase()!="muttonwrap"&& sInput.toLowerCase()!="vegwrap" ){
+                if(sInput.toLowerCase()!="chickenwrap" && sInput.toLowerCase()!="muttonwrap"&& sInput.toLowerCase()!="vegwrap" ){
                     this.stateCur=OrderState.Items;
                     aReturn.push("Please Enter a Valid Option")
                 }
-                else if(sInput.toLowerCase()=="grilledcheesemelt"){
+                else if(sInput.toLowerCase()=="chickenwrap"){
                     this.Icost=8;
                     this.stateCur = OrderState.SIZE
                     aReturn.push("select your size");
