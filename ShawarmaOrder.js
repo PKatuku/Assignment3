@@ -30,7 +30,7 @@ module.exports = class ShwarmaOrder extends Order{
         switch(this.stateCur){
           case OrderState.WELCOMING:
             this.stateCur = OrderState.Items;
-            aReturn.push("Welcome to Mutton Mastan");
+            aReturn.push("Welcome to Pawan Tea Point");
             aReturn.push("select your item?");
             aReturn.push('grilledcheesemelt ');
             aReturn.push('Muttonwrap ');
