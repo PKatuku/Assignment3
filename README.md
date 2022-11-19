@@ -1,14 +1,24 @@
-# Assignment3
+# <a href="https://github.com/rhildred/ES6OrderBot" target="_blank">ES6 Order Bot</a>
 
-Purpose:
-The Purpose of the project is to build an app where we can order the order the food through an SMS app and the payment also should be done with the same App.
+I got the user interface for the web from a student of mine, Pat Wilken.
 
-Instruction on How to Build and Run the Project:
+To run:
 
-I have created a Food Ordering app via SMS To use this app you have to download the code and unzip it and then with the help of VSCode you can run the code To run:
+1. Sign up for paypal developer sandbox and get a client id
+2. The first time run `npm install`
+3. `SB_CLIENT_ID=<put_in_your_client_id> npm start`
 
-The first time run npm install Press ctrl-f5 while your focus is in one of the files that starts with a number and is all lower case. You can Order the Food by sending a message and there will be a prompt with saying Welcome In the next step you'll recieve some options of Food You'd like At the end you'll recieve the total Order placed and The total amount of Order with taxes and the Delivery Details will be displayed.
-Now you'll get a Payment Link, where you can click the link which will redirect to your Paypal account
-Login with the Paypal Credentials
-Now make the Payment with your Credit/Debit Card.
-After Successful Payment, you can see the message that your Payment has successfully completed and your Order will be delivered with time.
+## Assignment 2
+
+Extend the order bot from assignment 1. You need to have at least 2 items on the menu unless your favourite food is pizza in which case you need to have 3 (I did pizza already). The menu items need to have size and one other attribute like toppings. You also need an up-sell item like drinks in the example.
+
+For Assignment 2 you need to add paypal and a payment screen as in the scaffold.
+
+### Marking
+
+basic order for an item with payment in a zip (65%)
+calculation of amount (up to 10%)
+error handling (up to 10%)
+get the delivery address from paypal's shipping address (up to 15%)
+
+There is a brief [presentation here](ES6Templates.pdf).
