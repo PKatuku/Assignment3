@@ -32,24 +32,24 @@ module.exports = class ShwarmaOrder extends Order{
             this.stateCur = OrderState.Items;
             aReturn.push("Welcome to Mutton Mastan");
             aReturn.push("select your item?");
-            aReturn.push('Chickenwrap ');
-            aReturn.push('Muttonwrap ');
+            aReturn.push('grilledcheesemelt ');
+            aReturn.push('shawarma ');
             aReturn.push('Vegwrap ');
             break;
             case OrderState.Items:
                 this.sItems=sInput;
-                if(sInput.toLowerCase()!="chickenwrap" && sInput.toLowerCase()!="muttonwrap"&& sInput.toLowerCase()!="vegwrap" ){
+                if(sInput.toLowerCase()!="grilledcheesemelt" && sInput.toLowerCase()!="shawarma"&& sInput.toLowerCase()!="vegwrap" ){
                     this.stateCur=OrderState.Items;
                     aReturn.push("Please Enter a Valid Option")
                 }
-                else if(sInput.toLowerCase()=="chickenwrap"){
+                else if(sInput.toLowerCase()=="grilledcheesemelt"){
                     this.Icost=8;
                     this.stateCur = OrderState.SIZE
                     aReturn.push("select your size");
                     aReturn.push("Large");
                     aReturn.push("regular");
                 }
-                else if(sInput.toLowerCase()=="muttonwrap"){
+                else if(sInput.toLowerCase()=="shawarma"){
                     this.Icost=9;
                     this.stateCur = OrderState.SIZE
                     aReturn.push("select your size");
